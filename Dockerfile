@@ -1,4 +1,4 @@
-FROM node
+FROM node:alpine
 
 ADD . .
 
@@ -8,6 +8,6 @@ RUN curl -f http://file.zip
 
 RUN cd ~
 
-RUN apt-get install curl
+RUN apk add curl
 
 CMD node index.js
