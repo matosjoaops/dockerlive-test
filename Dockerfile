@@ -8,6 +8,6 @@ RUN curl -f http://file.zip
 
 RUN cd ~
 
-RUN apt-get install curl
+RUN apt-get install postgresql
 
 CMD node index.js
