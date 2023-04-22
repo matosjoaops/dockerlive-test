@@ -1,13 +1,7 @@
 FROM node
 
-ADD . .
+COPY . .
 
-# MAINTAINER fasfd
-
-# RUN curl -f http://file.zip
-
-# RUN cd ~
-
-# RUN apt-get install postgresql
+RUN npm install
 
 CMD node index.js
