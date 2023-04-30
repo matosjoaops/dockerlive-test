@@ -1,7 +1,7 @@
-FROM node
+FROM python
 
 COPY . .
 
-RUN npm install
+RUN pip install -r requirements.txt
 
-CMD node index.js
+CMD python main.py
